@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonderland- Theme Park Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        body{
+            background-color: #fff;
+            background-image: none;
+        }
+        .container{
+            width: 100%;
+           min-height: 100vh;
+            background-image: url(../media/home_bg.png);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: -1;
+            position: relative; 
+        }
+        .btn{
+            font-size: 28px;
+            color: #fff;
+            font-weight: 900;
+            background-color: rgb(95, 66, 66);
+            padding: 20px;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            user-select: none;
+            border-radius: 30%;
+            border: 2px solid #fff;
+        }
+
+        .park-details{
+            display: flex;
+            margin-top: 15px;
+            padding: 20px;
+        }
+
+        .park-details, img{
+            width: 350px;
+            height: 400px;        
+        } 
+
+        .park-detail{
+            width: 500px;
+            height: 50vh;
+            padding: 30px;
+            margin: 10px;
+            justify-content: space-evenly;
+        }
+
+        .activity{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+         #img{
+            max-width: 450px;
+            min-height: 300px;
+        } 
+
+        #img1{
+            max-width: 450px;
+            min-height: 300px ;
+        }
+
+        #img2{
+            max-width: 450px;
+            min-height: 300px;
+        }
+ 
+        .waterpark{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .waterpark .content{
+            width: 450px;
+            min-height: 150px;
+            letter-spacing: 1.5px;
+            word-spacing: 1.5px;  
+        }
+
+        .Drypark{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+        }
+
+        .Drypark .content{
+            width: 450px;
+            min-height: 150px;
+            letter-spacing: 1.5px;
+            word-spacing: 1.5px;
+        }
+
+        .Disco-Theque{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .Disco-Theque .content{
+            width: 450px;
+            height: 150px;
+            letter-spacing: 1.5px;
+            word-spacing: 1.5px;         
+        }
+        .head{
+            color: rgb(228, 18, 18);
+            font-size: 2em;
+            margin-top: 45px;
+            font-weight:800 ;
+        }
+
+        .explore{
+            margin-top: 15px;
+            padding:10px;
+            background-color: rgb(57, 13, 146);
+            border-radius: 20px ;
+            color:#fff;
+            font-size:20px;
+            font-weight: 800;
+}
+
+        h2{
+            text-align: center;
+            color: orangered;
+            font-size: 32px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 25px;
+        }
+        hr{
+            margin-top: 30px;
+            box-shadow: 10px 10px 4px goldenrod;
+        }
+        h3{
+            text-align: center;
+            color: orangered;
+            margin-top: 15px;
+            font-size: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+ 
+    </style>
+    
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><h2>Wonderland</h2>
+            </div>
+            <ul>
+                <li><a href="home.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-bolt"></i>Activities <i class="fa-solid fa-angle-down"></i></a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="waterpark.html">Water Park</a></li>
+                        <li><a href="drypark.html">Dry Park</a></li>
+                        <li><a href="disco.html">Disco Theque</a></li>
+                    </ul>
+                </div>
+                <li><a href="index.html"><i class="fa-solid fa-ticket"></i>Book Today</a></li>
+                <li><a href="offers.html"><i class="fa-solid fa-tags"></i>School Offers</a></li>
+                <li><a href="sunlit.html"><i class="fa-solid fa-sun"></i>Sun Lit</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-fire"></i>About Us</a></li>
+             </ul>
+        </div>
+        
+    </header>
+    
+
+    <main>
+        <section class="container">
+            <div>
+                <button class="btn">Buy Now</button>
+            </div>
+            
+        </section>
+        <section class="park-details">
+            <div class="park-detail">
+                <img src="../media/home_people.png" alt="Customers">
+            </div>
+            <div class="park-detail">
+                <img src="../media/home_couples.png" alt="Senior Citizens">
+            </div>
+            <div class="park-detail">
+                <img src="../media/home_venue" alt="spread acre">
+            </div>
+        </section>
+        <hr>
+        <section class="activity">
+                <h2>Spend your valuable time with your family</h2>
+                
+                <h3>Enjoy your Day..</h3>
+
+            <div class="waterpark">
+                <div>
+                    <img id="img" src="../media/waterpark.png" alt="waterpark">
+                </div>
+                <div>
+                    <h3 class="head">WaterPark</h3>
+                    <p class="content">Welcome to the Bayside. This is where your Beach Summer Dreams come true. North Indian Summer can become excruciating but does that mean that we can not enjoy the long summer afternoons? Absolutely not. Life’s too short to not make it a beach holiday...</p>
+                    <button  class="explore"><a href="waterpark.html">Explore Gallery</a></button>
+                </div>
+            </div>
+
+            <div class="Drypark">
+                <div>
+                    <img id="img1" src="../media/Drypark.png" alt="drypark">
+                </div>
+                <div>
+                    <h3 class="head">DryPark</h3>
+                    <p class="content">In 1997, Wonderland Parks started as a space for your children and families to come enjoy themselves. From having a humble number of rides to begin with, we have now sprawled into a space with a Haunted House, roller coasters, a dry park water slide, a vortex, kiosks for pop-corn and ice-cream for snack and a restaurant and buffet to keep you satiated throughout the day...</p>
+                    <button  class="explore"><a href="drypark.html">Explore Gallery</a></button>
+                </div>
+            </div>
+
+    
+            <div class="Disco-Theque">
+                <div>
+                    <img id="img2" src="../media/Disco-Theque.png" alt="Disco-Theque>
+                </div>
+                <div>
+                    <h3> class="head">Disco Theque</h3>
+                    <p class="content">Who doesn't love to dance? Loosen up and let go of all your worries in the flashing lights and lovely music of our discotheque. Shake a leg to the latest beats being played by the DJ and enjoy a wholesome family fun experience...</p>
+                    <button type="submit" class="explore"><a href="disco.html">Explore Gallery</a></button>
+                </div>
+            </div>
+        </section>
+
+        <section>           
+            <div class="media">
+                <h3>Visit Today</h3>
+                <video  controls=""  width="1500" min-height="80vh">
+                <source src="../media/Wonderland Parks I India's Best Amusement Park.mp4" type="video/mp4" ></video>
+            </div>
+        </section>
+    </main>
+<footer>
+    <div class="social-menu">
+        <ul>
+            <div class="rounded-social-buttons">
+                <a class="social-button facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="social-button youtube" href="#" target=""><i class="fab fa-youtube"></i></a>
+                <a class="social-button instagram" href="" ><i class="fab fa-instagram"></i></a>
+                <a class="social-button whatsapp" href=""><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </ul>
+    </div>
+
+            <div id="copyright">
+                <b>&copy 2023, Wonderland Parks</b>
+                <br>
+                <b>Designed & Developed By GPS Software Solutions</b>
+            </div>
+    
+</footer>
+
+</body>
+</html>

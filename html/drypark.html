@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonderland- Theme Park DryPark Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .fa-angle-up{
+            scroll-behavior: smooth;
+            float: right;
+            font-size: 2.5rem;
+            padding:4px;
+            border: 2px solid rgba(0, 128, 0, 0.308);
+            border-radius: 50%;
+            position: fixed;
+            right:0;
+            outline: 2px solid black;
+        }
+        .tooltip{
+            position: relative;
+            display: inline-block;
+
+        }
+        .tooltip .tooltiptext{
+            width:150px;
+            color:white;
+            border:2px solid black;
+            border-radius: 20px;
+            padding:5px;
+            text-align: center; 
+            background-color: grey;
+           visibility: hidden;
+           z-index: 1;
+            position:absolute;
+    
+        }
+        .tooltip:hover .tooltiptext{
+            visibility: visible;
+        }
+           
+        .drypark-content{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .drypark-content h2{
+            font-size: 40px;
+            color:brown;
+            padding:10px;
+            text-align: center;
+        }
+        .drypark-content p{
+            min-width: 100px;
+            height: 300px;
+            text-align: center;
+            padding:0px 200px;
+            margin:10px;
+            letter-spacing:2px;
+            line-height:30px;
+        }
+        .drypark-gallery{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 5px;
+        }
+        .drypark-gallery h2{
+            font-size: 40px;
+            color:brown;
+            padding:10px;
+            margin: 20px;
+        }
+        .drypark-gallery img{
+
+            width:100%;
+            height:auto;
+            gap: 5px;
+        }
+      
+    </style>
+    
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><h2>Wonderland</h2>
+            </div>
+            <ul>
+                <li><a href="home.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-bolt"></i>Activities <i class="fa-solid fa-angle-down"></i></a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="waterpark.html">Water Park</a></li>
+                        <li><a href="drypark.html">Dry Park</a></li>
+                        <li><a href="disco.html">Disco Theque</a></li>
+                    </ul>
+                </div>
+                <li><a href="index.html"><i class="fa-solid fa-ticket"></i>Book Today</a></li>
+                <li><a href="offers.html"><i class="fa-solid fa-tags"></i>School Offers</a></li>
+                <li><a href="sunlit.html"><i class="fa-solid fa-sun"></i>Sun Lit</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-fire"></i>About Us</a></li>
+             </ul>
+        </div>
+        
+    </header>
+    <main>
+        
+        <section>
+            <div class="tooltip"><a href="#">
+                <i class="fa-solid fa-angle-up"  style="color: #29853b;"></i></a>
+                <span class="tooltiptext">Back to Top</span>
+            </div>
+            <div class="drypark-content">
+                <h2>Dry Park</h2>
+                <p>In 1998 Wonderland Parks started as a space for your children and families to come enjoy themselves. From having a humble number of rides to begin with, we have now sprawled into a space with a Haunted House, roller coasters, a dry park water slide, a vortex, kiosks for pop-corn and ice-cream for snack and a restaurant and buffet to keep you satiated throughout the day. Our vision was to become a space where under the shade of trees, children laugh from the sheer amount of enjoyment and fun and families create memories that are looked back upon with a fondness that only comes from love and joy.
+                <br>
+                <br>
+                Join us for a day in the park to enjoy our many entertaining attractions, for food that makes you want some more and to lounge in our many gardens in the evening. Always striving to be the place for your ultimate fun.
+                </p>
+            </div>
+
+            <div class="drypark-gallery">
+                <h2>Gallery</h2><br>
+                <div><img src="../media/dry-park0.png" alt="park" width="400px" height="400px"></div>
+                <div><img src="../media/Dry-park1.png" alt="park" width="400" height="400"></div>
+                <div><img src="../media/Dry-park2.png" alt="park" width="400" height="400"></div>
+                <div><img src="../media/Dry-park3.png" alt="park" width="400" height="400"></div>
+                <div><img src="../media/Dry-park4.png" alt="park" width="400" height="400"></div>
+                <div><img src="../media/Dry-park5.png" alt="park" width="400" height="400"></div>
+                <div><img src="../media/Dry-park6.png" alt="park" width="400" height="400"></div>
+                <div><img src="../media/Dry-park7.png" alt="park" width="400" height="400"></div>
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-menu">
+            <ul>
+                <div class="rounded-social-buttons">
+                    <a class="social-button facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="social-button youtube" href="#" target=""><i class="fab fa-youtube"></i></a>
+                    <a class="social-button instagram" href="" ><i class="fab fa-instagram"></i></a>
+                    <a class="social-button whatsapp" href=""><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </ul>
+        </div>
+    
+                <div id="copyright">
+                    <b>&copy 2023, Wonderland Parks</b>
+                    <br>
+                    <b>Designed & Developed By GPS Software Solutions</b>
+                </div>
+        
+    
+    </footer>
+</body>
+</html>

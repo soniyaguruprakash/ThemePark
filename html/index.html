@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonderland- Theme Park</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        .offer-content{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .offer-content h2{
+            font-size: 40px;
+            color:brown;
+            padding:10px;
+            text-align: center;
+        }
+        .offer-content p{
+            min-width: 100px;
+            min-height: 100px;
+            text-align: center;
+            padding:0px 200px;
+            margin:10px;
+            letter-spacing:2px;
+            line-height:30px;
+        }
+
+        .booking{
+            display: flex;
+        }
+        .booking .img{
+            width: 50%;
+            height: 30vh;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            background-size: cover;
+            align-items: center;
+        }
+
+        .entry{
+            float: left;
+            text-align: center;
+            justify-content: center;
+            padding-right: 70px;
+            border: 5px solid black;
+            box-sizing: border-box;
+        }
+
+        .entry h2{
+            color: brown;
+            font-size: 32px;
+            font-weight: 800;
+        }
+
+        .entry  p{
+            color: brown;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .entry .qty{
+            color: brown;
+            font-size: large;
+        }
+        .entry label{
+            color: brown;
+        }
+
+        .fas{
+            margin: 3px;
+            padding: 3px;
+            align-items: center;
+        }
+
+        .btn{
+            width: 15rem;
+            padding: 20px;
+            margin: 10px;
+            color: #fff;
+            background-color: blue;
+            border-radius: 30px;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><h2>Wonderland</h2>
+            </div>
+            <ul>
+                <li><a href="home.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-bolt"></i>Activities <i class="fa-solid fa-angle-down"></i></a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="waterpark.html">Water Park</a></li>
+                        <li><a href="drypark.html">Dry Park</a></li>
+                        <li><a href="disco.html">Disco Theque</a></li>
+                    </ul>
+                </div> 
+                <div>               
+                    
+                        <li><a href="index.html"><i class="fa-solid fa-ticket"></i>Book Today</a></li>
+                        <li><a href="offers.html"><i class="fa-solid fa-tags"></i>School Offers</a></li>
+                        <li><a href="sunlit.html"><i class="fa-solid fa-sun"></i>Sun Lit</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-fire"></i>About Us</a></li>
+            </ul>
+            </div>
+        
+    </header>
+    <main>
+        <section class="offer-content">
+            <h2>Ticket Online</h2>
+            <br>
+            <br>
+            <p>Why wait in line when you can book now</p>
+        </section>
+        <div class="booking">
+            <div class="img">
+                <img src="../media/ticket.png" alt="ticket" >
+            </div>
+            <div class="entry">
+                <h2>Double Entry</h2>
+                <p>Rs. 1600.00</p>
+                <br>
+                <br>
+                <p>Tax Included</p>
+                <br>
+                <label for="quantity">Quantity</label>
+                <br>
+                <br>
+                <input class="qty" type="number" name="quantity" id="quantity">
+                <br>
+                <br>
+                <p><i class="fa-solid fa-check">&nbsp;&nbsp;&nbsp;Included Buffet</i></p>
+                <br>
+                <p><i class="fa-solid fa-check">&nbsp;&nbsp;&nbsp;Included Rides</i></p>
+                <br>
+                <p><i class="fa-solid fa-check">&nbsp;&nbsp;&nbsp;Included Water Park</i></p>
+                <br>
+                <p><i class="fa-solid fa-check">&nbsp;&nbsp;&nbsp;Care Instructions</i></p>
+                <br>
+                <p><i class="fa-solid fa-check">&nbsp;&nbsp;&nbsp;Double entry is valid for one financial year <br> i.e. 31st March</i></p>
+                <br>
+                <br>
+                <br>
+                <button class="btn">Add To Cart</button>
+                <br>
+                <br>
+                <button class="btn">Buy It Now</button>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="social-menu">
+            <ul>
+                <div class="rounded-social-buttons">
+                    <a class="social-button facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="social-button youtube" href="#" target=""><i class="fab fa-youtube"></i></a>
+                    <a class="social-button instagram" href="" ><i class="fab fa-instagram"></i></a>
+                    <a class="social-button whatsapp" href=""><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </ul>
+        </div>
+    
+                <div id="copyright">
+                    <b>&copy 2023, Wonderland Parks</b>
+                    <br>
+                    <b>Designed & Developed By GPS Software Solutions</b>
+                </div>
+        
+    
+    </footer>
+</body>
+</html>

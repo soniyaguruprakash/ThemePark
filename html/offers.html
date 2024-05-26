@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonderland- Theme Park Offers Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        .offer-content{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .offer-content h2{
+            font-size: 40px;
+            color:brown;
+            padding:10px;
+            text-align: center;
+        }
+        .offer-content p{
+            min-width: 100px;
+            min-height: 100px;
+            text-align: center;
+            padding:0px 200px;
+            margin:10px;
+            letter-spacing:2px;
+            line-height:30px;
+        }
+        
+        .call{
+            margin-top: 5px;
+            padding:10px;
+            background-color: rgb(57, 13, 146);
+            border-radius: 20px ;
+            color:#fff;
+            font-size:20px;
+            font-weight: 800;
+        }
+
+        .best-school-offer{
+           width:100%;
+           min-height: 80vh;
+            background-image: url(../media/offer.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            
+        }
+        .best-school-offer-content h2{
+            padding:8px;
+            color:brown;
+            font-weight: 800;
+        }
+        .best-school-offer-content{
+           width:50%;
+           box-sizing: border-box;
+           min-height:80vh;
+           border:2px solid black;
+           background-color: lightgreen;
+           float:right;
+           text-align: center;
+           font-weight: 500;
+           padding:20px;
+           letter-spacing: 1.5px;
+           
+        }
+        .register-form{
+           max-width:100em;
+           min-height: 80vh;
+           padding:50px;
+           border:10px solid rgba(0, 0, 0, 0.37);
+           margin:10px;
+           
+        }
+        .register-form input{
+            width:50em;
+            padding:10px;
+            border:none;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.37);
+            outline:none;
+
+        }
+        .register-form legend{
+            color:brown;
+            font-weight: 600;
+            font-size: 30px;
+        }
+        .submit-btn{
+            padding:15px;
+            background-color: brown;
+            color:white;
+            font-size: 25px;
+            border-radius: 30px;
+            font-weight: 600;
+        }
+        /* .register-form .name{ display: inline-block;} */
+
+        
+    </style>
+    
+    
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><h2>Wonderland</h2>
+            </div>
+            <ul>
+                <li><a href="home.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-bolt"></i>Activities <i class="fa-solid fa-angle-down"></i></a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="waterpark.html">Water Park</a></li>
+                        <li><a href="drypark.html">Dry Park</a></li>
+                        <li><a href="disco.html">Disco Theque</a></li>
+                    </ul>
+                </div>
+                <li><a href="index.html"><i class="fa-solid fa-ticket"></i>Book Today</a></li>
+                <li><a href="offers.html"><i class="fa-solid fa-tags"></i>School Offers</a></li>
+                <li><a href="sunlit.html"><i class="fa-solid fa-sun"></i>Sun Lit</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-fire"></i>About Us</a></li>
+             </ul>
+        </div>
+        
+    </header>
+
+    <main>
+        <section class="offer-content">
+            <h2>School Offers</h2>
+            <p>we’ve been serving schools from across India since the past 10 years. Our goal is simple to provide the best entertainment to our kids by serving them nothing but the best.
+                Explore our specialty curated offers below -
+            </p>
+            <button  class="call">Call Now<button>
+        </section>
+        <section>
+            <div>
+                <img src="../media/school_offers.png" alt="students" width="100%" height="700px">
+            </div>
+        </section>
+            <section class="best-school-offer">
+                
+                    <div class="best-school-offer-content">
+                        <h2>Best School Offers</h2>
+                        <p>Over two decades ago, we started Wonderland Parks with a simple vision in mind, to provide a place for joy and entertainment for children and families. With the introduction of new rides every year and a whole segment of water park and it’s water slides, we quickly became the favourite choice for children and families. We’ve had ties with schools all over Punjab, Himachal and Jammu from the past twenty years. Our top of the game security, maintenance, addition of new entertainment solutions every year; have been an appealing factor for schools and students. With twenty years plus in running, our aim today is still the same, to send every child home with a smile on their face and fond memories in their hearts.
+                            <br>
+                            <br>
+                        Contact us today to receive the best offers for Schools. We have different packages for you to choose.
+                        </p>
+                        <button  class="call">Download Brochure</button>
+
+                    </div>
+            </section>
+    
+        </section>
+        <section>
+        <fieldset class="register-form">
+            <legend>Booking Form</legend>
+        <form>
+            <!-- <label for="firstname" >First Name:</label> -->
+            <input type="text" id="firstname" class="name" placeholder="FirstName"><br><br>
+            <!-- <label for="lasttname">Last Name:</label> -->
+            <input type="text"id="lastname" class="name" placeholder="LastName"><br><br>
+            <!-- <label for="Email">Email Id:</label> -->
+            <input type="email"id="email" placeholder="Email" required><br><br>
+            <!-- <label for="phonenumber">Mobile Number:</label> -->
+            <input type="tel" id="phonenumber" placeholder="Mobile Number" required><br><br>
+            <!-- <label for="institution-name" >Institution Name:</label> -->
+            <input type="text" id="institution-name" placeholder="institution-name"><br><br>
+            <input type="date" placeholder="Expected Date"><br><br>
+            <textarea rows="15" cols="30" placeholder="Enter your comments">
+
+            </textarea><br><br>
+            <button class="submit-btn">Submit</button>
+        </form>
+        </fieldset>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <div class="social-menu">
+            <ul>
+                <div class="rounded-social-buttons">
+                    <a class="social-button facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="social-button youtube" href="#" target=""><i class="fab fa-youtube"></i></a>
+                    <a class="social-button instagram" href="" ><i class="fab fa-instagram"></i></a>
+                    <a class="social-button whatsapp" href=""><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </ul>
+        </div>
+    
+                <div id="copyright">
+                    <b>&copy 2023, Wonderland Parks</b>
+                    <br>
+                    <b>Designed & Developed By GPS Software Solutions</b>
+                </div>
+        
+    
+    </footer>
+</body>
+</html>
